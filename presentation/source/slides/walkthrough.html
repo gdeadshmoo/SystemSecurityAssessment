@@ -1,0 +1,16 @@
+<section id="walkthrough" data-transition="fade" style="background:#0A0A0A;color:#FFFFFF;font-family:Inter, Arial, sans-serif;padding:96px 128px 128px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.16);padding:0 0 20px 0">
+<p style="font-size:24px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:#00A0FF">06 — In practice · An example (illustrative)</p>
+<p style="font-size:24px;font-weight:400;letter-spacing:4px;text-transform:uppercase;color:#A1B4C4">System security assessment</p>
+</div>
+<h2 style="font-size:80px;font-weight:300;line-height:1.08;letter-spacing:-3px;color:#FFFFFF">Follow one requirement <span style="color:#00A0FF">around the loop.</span></h2>
+<table style="font-family:Inter, Arial, sans-serif;font-size:30px;color:#FFFFFF;border:1px solid rgba(255,255,255,0.24)">
+<tr style="background:#24262B"><th style="width:20%;color:#FFFFFF;font-weight:600;padding:16px 28px">Stage</th><th style="width:80%;color:#FFFFFF;font-weight:600;padding:16px 28px">What happens</th></tr>
+<tr style="background:#16171A"><td style="color:#70E4FE;padding:16px 28px"><b>02 Analyze</b></td><td style="color:#FFFFFF;padding:16px 28px">REQ 3.2: session tokens die at logout. Human approves.</td></tr>
+<tr style="background:#0A0A0A"><td style="color:#70E4FE;padding:16px 28px"><b>03 Plan</b></td><td style="color:#FFFFFF;padding:16px 28px">Test 3.2.1: replay a captured token after logout. High priority.</td></tr>
+<tr style="background:#16171A"><td style="color:#70E4FE;padding:16px 28px"><b>04 Write</b></td><td style="color:#FFFFFF;padding:16px 28px">AI writes a replay harness. Human re-plants the bug; the test catches it.</td></tr>
+<tr style="background:#0A0A0A"><td style="color:#70E4FE;padding:16px 28px"><b>05 Run</b></td><td style="color:#FFFFFF;padding:16px 28px">Runs in every weekly full run. Green for months.</td></tr>
+<tr style="background:#24262B"><td style="color:#FF6A34;padding:16px 28px"><b>05 Run</b></td><td style="color:#FFFFFF;padding:16px 28px">Session service refactor is a material change. Full run triggers; 3.2.1 goes red.</td></tr>
+<tr style="background:#0A0A0A"><td style="color:#70E4FE;padding:16px 28px"><b>06–07 Compare</b></td><td style="color:#FFFFFF;padding:16px 28px">Diff flags a regression vs. last release. Human blocks the release, names an owner.</td></tr>
+</table>
+</section>
